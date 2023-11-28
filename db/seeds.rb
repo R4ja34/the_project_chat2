@@ -14,7 +14,6 @@ require 'faker'
 Item.destroy_all
 User.destroy_all
 
-
 # Crée 5 utilisateurs avec des adresses e-mail aléatoires et un mot de passe par défaut
 # Création des utilisateurs
 5.times do
