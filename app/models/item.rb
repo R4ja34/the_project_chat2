@@ -1,4 +1,7 @@
 class Item < ApplicationRecord
-  belongs_to :cart, optional: true  # Appartient à un panier (optionnel)
-  belongs_to :order, optional: true  # Appartient à une commande (optionnel)
+  has_many :cart_items
+  has_many :carts, through: :cart_items
+
+  has_many :order_items
+  has_many :orders, through: :order_items
 end
